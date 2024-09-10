@@ -60,7 +60,7 @@ extension MoyaProvider {
                 case .success(let response):
                     do {
                         _ = try response.filterSuccessfulStatusCodes()
-                        
+                        print(response.data)
                         let object = try response.map(T.self)
                         return promise(.success(object))
                     } catch {

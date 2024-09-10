@@ -12,7 +12,7 @@ import Foundation
 enum RequestDomain {
     
     enum Mtqaran {
-        static let baseUrl: URL = URL(string: "")!
-        static let apiQueue: DispatchQueue = .init(label: "", qos: .default, attributes: .concurrent)
+        static let baseUrl: URL = URL(string: "https://admin.mtqaran.am/arm/app/")!
+        static let apiQueue: DispatchQueue = .init(label: "https://admin.mtqaran.am/arm/app/", qos: .default, attributes: .concurrent)
     }
 }
